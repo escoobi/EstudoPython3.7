@@ -20,10 +20,3 @@ class Produto:
 ps4 = Produto()
 print(ps4)
 print(type(ps4))
-
-
-
-
-
-
-
