@@ -1,11 +1,11 @@
 """
 Atributos de classes
------representa as caracteristicas do objeto. Ou seja, pelos atributos nós conseguimos
+representa as caracteristicas do objeto. Ou seja, pelos atributos nós conseguimos
 representar computacionalmente os estados de um objeto
 No python atributos é divido em 3 partes
-   - Atributos de instância;
-   - Atributos de classes;
-   - Atributos dinamicos;
+   Atributos de instância;
+   Atributos de classes;
+   Atributos dinamicos;
 
 
 
@@ -109,7 +109,7 @@ class Produto:
         self.nome = nome
         self.descricao = descricao
         self.valor = (valor * Produto.imposto)
-        self.id = Produto.contator +1
+        self.id = Produto.contator + 1
         Produto.contator = self.id
 
 
