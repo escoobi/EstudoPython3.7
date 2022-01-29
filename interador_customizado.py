@@ -1,7 +1,7 @@
 """
 
 
-for a in range(11):
+for n in range(11):
     print(a)
 
 """
@@ -37,6 +37,3 @@ print(next(inter))
 print(next(inter))
 print(next(inter))
 # print(next(inter))
-
-
-
