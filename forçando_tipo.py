@@ -1,0 +1,34 @@
+"""
+Forçando dados com decoradores
+"""
+
+
+def forca_tipo(*tipos):
+    def decorador(funcao):
+        def coverter(*args, **kwargs):
+            lista = []
+            for(valor, tipo) in zip(args, tipos):
+                lista.append(tipo(valor))
+            return funcao(*lista, **kwargs)
+        return coverter
+    return decorador
+
+
+# Forçando o tipo dos dados dos argumentos
+@forca_tipo(str, int)
+def repete_msg(msg, vezes):
+    for vez in range(vezes):
+        print(msg)
+
+
+repete_msg("teste", '3')
+
+
+@forca_tipo(float, float)
+def dividir(a, b):
+    print(a/b)
+
+
+dividir('1', '5')
+
+
