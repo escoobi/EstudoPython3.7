@@ -11,4 +11,4 @@ def cabecalho(texto: str, alinhamento: bool = False) -> str:
 
 
 print(cabecalho("Gustavo"))
-print(cabecalho("Gustavo",True))
+print(cabecalho("Gustavo", True))
