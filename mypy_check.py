@@ -11,4 +11,4 @@ def cabecalho(texto: str, alinhamento: bool = False) -> str:
 
 
 print(cabecalho("Gustavo"))
-print(cabecalho("Gustavo", alinhamento="correr"))
+print(cabecalho("Gustavo",True))
